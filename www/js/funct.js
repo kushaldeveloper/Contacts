@@ -1,8 +1,7 @@
-document.addEventListener("deviceready",onDeviceReady,false);
+	document.addEventListener("deviceready",onDeviceReady,false);
 	function onDeviceReady(){
 		alert("device is starting");
 	document.getElementById("createContact").addEventListener("click", createContact);
-	}
 	function createContact() {
 			var myContact = navigator.contacts.create({"displayName": "Unknown"});
 			myContact.save(contactSuccess, contactError);
@@ -15,4 +14,5 @@ document.addEventListener("deviceready",onDeviceReady,false);
 			alert('Failed because: ' + message);
 		}
 	
-	}	
+	}
+}		
