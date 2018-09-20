@@ -1,6 +1,7 @@
 	document.addEventListener("deviceready",onDeviceReady,false);
 	function onDeviceReady(){
 		alert("device is starting");
+		console.log(navigator.contacts);
 		document.getElementById("createContact").addEventListener("click", createContact);
 	}
 		//document.getElementById("findContact").addEventListener("click", findContact);
