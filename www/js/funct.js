@@ -1,8 +1,8 @@
 	document.addEventListener("deviceready",onDeviceReady,false);
 	function onDeviceReady(){
 		alert("device is starting");
+		document.getElementById("createContact").addEventListener("click", createContact);
 	}
-		//document.getElementById("createContact").addEventListener("click", createContact);
 		//document.getElementById("findContact").addEventListener("click", findContact);
 		//document.getElementById("deleteContact").addEventListener("click", deleteContact);
 		function createContact() {
