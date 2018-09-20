@@ -7,7 +7,9 @@
 		//document.getElementById("deleteContact").addEventListener("click", deleteContact);
 		function createContact() {
 			var myContact = navigator.contacts.create({"displayName": "Unknown"});
+			alert('..')
 			myContact.save(contactSuccess, contactError);
+			alert('.....')
     
 		function contactSuccess() {
 			alert("Contact is saved!");
