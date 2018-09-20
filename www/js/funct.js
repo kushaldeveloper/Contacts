@@ -7,17 +7,17 @@
 		//document.getElementById("deleteContact").addEventListener("click", deleteContact);
 		function createContact() {
 			var myContact = navigator.contacts.create({"displayName": "Unknown"});
-			alert('..')
+			alert('..');
 			myContact.save(contactSuccess, contactError);
-			alert('.....')
+			alert('.....');
     
 		function contactSuccess() {
 			alert("Contact is saved!");
-		}
+		};
 	
 		function contactError(message) {
 			alert('Failed because: ' + message);
-		}
+		};
 	}
 	
 
