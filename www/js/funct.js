@@ -1,22 +1,23 @@
 	document.addEventListener("deviceready",onDeviceReady,false);
 	function onDeviceReady(){
 		alert("device is starting");
-		console.log(navigator.contacts);
 		document.getElementById("createContact").addEventListener("click", createContact);
 	}
 		//document.getElementById("findContact").addEventListener("click", findContact);
 		//document.getElementById("deleteContact").addEventListener("click", deleteContact);
 		function createContact() {
-			alert("......");
+			//alert("......");
 			var myContact = navigator.contacts.create({"displayName": "Test User"});
-		}
-		/*function contactSuccess() {
+			alert("1234");
+		};
+			function contactSuccess(myContact) {
 			alert("Contact is saved!");
-		}
+		};
 		function contactError(message) {
 			alert('Failed because: ' + message);
-		}
-	
+		};
+		
+		myContact.save(onSuccess,onError);
 
 		/*function findContacts() {
 			var options = new ContactFindOptions();
