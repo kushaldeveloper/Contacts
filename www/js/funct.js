@@ -6,6 +6,7 @@
 		//document.getElementById("findContact").addEventListener("click", findContact);
 		//document.getElementById("deleteContact").addEventListener("click", deleteContact);
 		function createContact() {
+			alert("......");
 			var myContact = navigator.contacts.create({"displayName": "Test User"});
 		}
 		/*function contactSuccess() {
