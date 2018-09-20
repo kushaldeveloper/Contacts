@@ -2,8 +2,8 @@
 	function onDeviceReady(){
 		alert("device is starting");
 		document.getElementById("createContact").addEventListener("click", createContact);
-		document.getElementById("findContact").addEventListener("click", findContact);
-		document.getElementById("deleteContact").addEventListener("click", deleteContact);
+		//document.getElementById("findContact").addEventListener("click", findContact);
+		//document.getElementById("deleteContact").addEventListener("click", deleteContact);
 		function createContact() {
 			var myContact = navigator.contacts.create({"displayName": "Unknown"});
 			myContact.save(contactSuccess, contactError);
@@ -17,7 +17,8 @@
 		}
 	
 	}
-		function findContacts() {
+}
+		/*function findContacts() {
 			var options = new ContactFindOptions();
 			options.filter = "";
 			options.multiple = true;
@@ -59,6 +60,5 @@
       alert('Failed because: ' + message);
 		}
 	
-	}
-	
-}			
+	}*/
+				
