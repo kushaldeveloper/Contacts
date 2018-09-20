@@ -9,13 +9,13 @@
 			//alert("......");
 			var myContact = navigator.contacts.create({"displayName": "Test User"});
 			alert("1234");
-		};
+		}
 			function onSuccess(myContact) {
 			alert("Contact is saved!");
-		};
+		}
 		function onError(message) {
 			alert('Failed because: ' + message);
-		};
+		}
 		
 		myContact.save(onSuccess,onError);
 
