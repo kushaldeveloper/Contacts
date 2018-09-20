@@ -8,7 +8,7 @@
 		function createContact() {
 			var myContact = navigator.contacts.create({"displayName": "Test User"});
 		}
-		function contactSuccess() {
+		/*function contactSuccess() {
 			alert("Contact is saved!");
 		}
 		function contactError(message) {
