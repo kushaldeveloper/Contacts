@@ -1,4 +1,5 @@
 	document.addEventListener("deviceready",onDeviceReady,false);
+		
 	function onDeviceReady(){
 		alert("device is starting");
 		document.getElementById("createContact").addEventListener("click", createContact);
@@ -10,14 +11,16 @@
 			var myContact = navigator.contacts.create({"displayName": "Test User"});
 			alert("1234");
 		}
+		document.addEventListener("Success", onSuccess, false);
 			function onSuccess(myContact) {
 			alert("Contact is saved!");
 		}
+		document.addEventListener("Error", onError, false);
 		function onError(message) {
 			alert('Failed because: ' + message);
 		}
 		
-		myContact.save(onSuccess,onError);
+		
 
 		/*function findContacts() {
 			var options = new ContactFindOptions();
