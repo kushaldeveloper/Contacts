@@ -7,6 +7,8 @@
 		function createContact() {
 			var myContact = navigator.contacts.create({"displayName": "Unknown"});
 			myContact.save(contactSuccess, contactError);
+		}
+	}
     
 		function contactSuccess() {
 			alert("Contact is saved!");
@@ -16,8 +18,7 @@
 			alert('Failed because: ' + message);
 		}
 	
-	}
-}
+
 		/*function findContacts() {
 			var options = new ContactFindOptions();
 			options.filter = "";
