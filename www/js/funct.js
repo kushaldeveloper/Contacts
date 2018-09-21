@@ -10,7 +10,7 @@
 			//alert("......");
 			var myContact = navigator.contacts.create({"displayName": "Test User"});
 			alert("1234");
-		}
+		};
 		document.addEventListener("Success", onSuccess, false);
 			function onSuccess(myContact) {
 			alert("Contact is saved!");
